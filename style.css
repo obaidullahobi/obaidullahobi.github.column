@@ -1,0 +1,361 @@
+/*Strip the ul of padding and list styling*/
+ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    position: absolute;
+    
+}
+
+/*Create a horizontal list with spacing*/
+li {
+    display:inline-block;
+    margin-right: 1px;
+    border: 1px solid white;
+
+}
+
+/*Style for menu links*/
+li a {
+    display:block;
+    min-width:241px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: white;
+    background: #0d8fe6;
+    text-decoration: none;
+}
+/*Hover state for top level links*/
+li:hover a {
+    background: #24966e;
+}
+/*Style for dropdown links*/
+li:hover ul a {
+    background: #f3f3f3;
+    min-width: 200px;
+    color: #2f3036;
+    height: 40px;
+    line-height: 40px;
+    
+}
+/*Hover state for dropdown links*/
+li:hover ul a:hover {
+    background: #575e5b;
+    color: #fff;
+}
+
+/*Hide dropdown links until they are needed*/
+li ul {
+    display: none;
+}
+/*Make dropdown links vertical*/
+li ul li {
+    display: block;
+    float:none;
+}
+/*Prevent text wrapping*/
+li ul li a {
+    width: auto;
+    min-width: 160px;
+    padding:0 20px ;
+    margin-left: 0;
+    
+}
+/*Display the dropdown on hover*/
+ul li a:hover + .hidden, .hidden:hover {
+    display: block;
+}
+/*Style 'show menu' label button and hide it by 
+
+default*/
+.show-menu {
+    font-family: "Helvetica Neue", Helvetica,Arial, sans-serif; 
+ text-decoration: none;
+    color: rgb(255, 255, 255);
+    background: #305ae0;
+    text-align: center;
+    padding: 10px 0;
+    display:none;
+}
+
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+}
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+
+
+header{
+    background-image: url("paktia.jpg");
+    background-size: 100% 100%;
+   line-height: 100%;
+   padding: 5px;
+   padding-bottom: 54px;
+   background-repeat: no-repeat;
+}
+img{
+    width: 140px;
+    height: 110px;
+    margin-left: 44%;
+}
+#hero1{
+    text-align: center;
+    background-color: #718ff0;
+    width:40%;
+    margin-left: 30%;
+    border-radius: 9px;
+}
+
+
+#hero2{
+ text-align: center;
+ margin-top: 10px;
+ background-color: #2f3036;
+ width:28%;
+ margin-left: 35.6%;
+ padding: 7px;
+ border-radius: 9px;
+ color:rgb(243, 67, 36);
+ 
+}
+.container {
+    border: 1px solid black;
+    display:column;
+    width:100%;
+    height: 185px;
+    background: rgb(101, 146, 160);
+    
+    
+     
+}
+#image1{
+    position: absolute;
+    margin: 12px;
+    width:200px;
+    height:148px;
+    border:3px solid rgb(12, 146, 12);
+    border-radius:8px;
+    margin-top: 16px;
+    
+    
+}
+#hero3{
+text-align: center;
+width:80%;
+margin-left: 222px;
+padding-top: 4px;
+padding:13px;
+font-size: 21px;
+font-family: italic;
+border-radius: 10px;
+margin-top: 18px;
+color:white;
+font-weight: bolder;
+background-color: #313968;
+}
+#hero4{
+    color:rgb(26, 129, 5);
+}
+
+
+#section0{
+    background-image: url("kabul.palace.jpg");
+    background-size:100% 98%;
+    margin-bottom:  10px;
+    height: 400px;
+    padding: 10px;
+}
+
+#image2{
+    position: absolute;
+    margin-left: 33px;
+    border-radius: 8px;
+}
+#image3{
+    margin-left: 63%;
+    border-radius: 8px;
+    
+}
+#section1 {
+    background: #24966e;
+    
+}
+
+/* Create three equal columns that floats next to each other */
+.column2 {
+    float: right;
+    width: 37%;
+    padding: 6px;
+    padding-bottom: 30px;
+    border: 2px solid blue;
+    margin-left: 5px;
+    height: 400px;
+    margin-bottom: 4px;
+    margin-top: 0px;
+}
+#hero5{
+    background-color: antiquewhite;
+    margin-top: 1px;
+    padding: 4px;
+    border-radius: 8px;
+    border:2px solid black;
+}
+
+
+.column1 {
+    display: column;
+    width:21%;
+    padding:10px;
+    height: 860px;
+    margin-left: 1px;
+    border:2px solid blue;
+    margin-top: 0px;
+}
+#hero7{
+    background-color: #2f3036;
+    color: #f2f2f2;
+    text-align: center;
+    border-radius: 6px;
+}
+#power1{
+    margin-top: 2px;
+    background-color: #ccc;
+    border-radius: 4px;
+    padding: 3px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear:both;
+}
+
+
+
+input[type=text], select,textarea {
+    width: 100%;
+    padding: 8px 8px;
+    margin: 8px 0;
+    display: grid;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    
+}
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 8px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+   
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.test{
+    color:white;
+    margin-left: 10px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width:600px) {
+    .column1  {
+        width: 100%;
+    }
+    .column2{
+      width:100%;
+    }
+    /*style the footer*/
+.footer{
+    background-color: #575e5b;
+    padding: 30px;
+    text-align: center;
+}
+    img{
+        width: 80px;
+        height: 60px;
+        margin-left: 36%;
+    }
+    header{
+        background-image: url("paktia.jpg");
+        background-size: 100% 100%;
+       line-height: 100%;
+       padding: 5px;
+       padding-bottom: 0px;
+       background-repeat: no-repeat;
+    }
+    #hero1{
+        text-align: center;
+        background-color: rgb(145, 28, 8);
+        width:97%;
+        margin-left: 4px;
+        margin-right: 8px;
+        border-radius: 9px;
+        color:rgb(15, 14, 14);
+        font-size: 20px;
+        margin-top:1px; 
+        
+    }
+    #image1{
+        margin-left: 0px;
+        margin: 0;
+        padding:5px;
+    }
+    
+    #hero2{
+     text-align: center;
+     margin-top: 10px;
+     background-color: #2f3036;
+     width:90%;
+     margin-left: 6%;
+     padding: 7px;
+     border-radius: 9px;
+     color:rgb(243, 67, 36);
+     font-size: 10px;
+     
+    }
+
+}
+
+
+
+
+
+
+
+
+/*Responsive Styles*/
+@media screen and (max-width : 768px){
+    /*Make dropdown links appear inline*/
+    ul {
+        position: static;
+        display: none;
+    }
+    /*Create vertical spacing*/
+    li {
+        margin-bottom: 1px;
+    }
+    /*Make all menu links full width*/
+    ul li, li a {
+        width: 100%;
+    }
+    /*Display 'show menu' link*/
+    .show-menu {
+        display:block;
+    }
+}
+
